@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 75vh;
+    padding-top: 20px;
+}
+
+.triangle-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 280px;
+    height: 280px;
+    overflow: auto;
+    background-color: blue;
+}
+
+.triangle-container .line {
+    position: absolute;
+
+}
+
+.triangle-container .line#a {
+    left: 0;
+}
+
+.triangle-container .line#b {
+    top: 0;
+    right: 50%;
+}
+
+.triangle-container .line#c {
+    right: 0;
+}
+
+.triangle-container .triangle {
+    width: 0;
+    height: 0;
+    border-top: 0;
+    border-right: 0;
+}
+
+.line-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line-set p {
+    padding: 0 0 0 10px;
+}
+
+.line-set input {
+    padding: 10px;
+    width: 50px;
+    border: 1px solid #000000;
+}
